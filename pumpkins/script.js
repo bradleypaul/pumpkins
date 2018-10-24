@@ -5,7 +5,7 @@
 
     function start() {
         document.getElementById('overlay').addEventListener('click', () => {
-            let button = document.getElementById('button').style.display = 'none';
+            document.getElementById('button').style.display = 'none';
             setBackgroundImage();
             let audio = new Audio('pumpkins.mp3');
             audio.loop = true;
