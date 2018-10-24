@@ -16,7 +16,7 @@
     }
 
     function setBackgroundImage() {
-        let r = Math.floor(Math.random() * Math.floor(2));
+        let r = Math.floor(Math.random() * Math.floor(3));
         document.body.style.backgroundImage = `url(pumpkins${r}.webp)`;
     }
 })();
