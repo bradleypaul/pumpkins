@@ -4,7 +4,9 @@
     document.addEventListener("DOMContentLoaded", start, false);
 
     function start() {
-        document.getElementById('overlay').addEventListener('click', () => {
+        document.getElementById('overlay').addEventListener('click', listener);
+        
+        function listener () {
             document.getElementById('button').style.display = 'none';
             setBackgroundImage();
             let audio = new Audio('pumpkins.mp3');
@@ -12,7 +14,8 @@
             audio.autoplay = true;
             audio.play();
             console.log('playing...');
-        });
+            document.getElementById('overlay').removeEventListener('click', this);
+        }
     }
 
     function setBackgroundImage() {
