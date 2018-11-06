@@ -7,14 +7,13 @@
         document.getElementById('overlay').addEventListener('click', listener);
         
         function listener () {
-            document.getElementById('button').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
             setBackgroundImage();
             let audio = new Audio('pumpkins.mp3');
             audio.loop = true;
             audio.autoplay = true;
             audio.play();
             console.log('playing...');
-            document.getElementById('overlay').removeEventListener('click', this);
         }
     }
 
