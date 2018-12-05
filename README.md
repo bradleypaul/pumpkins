@@ -1,3 +1,3 @@
 # pumpkins
 Fun little website in tribute of 
-[David S. Pumpkins](http://paulbradley.codes/pumpkins)
+[David S. Pumpkins](http://pumpkins.paulbradley.codes)
